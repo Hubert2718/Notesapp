@@ -4,7 +4,7 @@ Aby uruchomić aplikację należy
   
     sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout ce.key -out ce.crt
     
-  2. Z poziomu folderu Notesapp/ uzyć polecenia 
+  2. Z poziomu folderu Notesapp/ użyć polecenia 
   
     docker-compose up --build
     
@@ -14,4 +14,4 @@ Aby uruchomić aplikację należy
    
    **Aby działał reset hasła, w pliku Notesapp/project/notesapp/__init__.py należy podać własnego maila i app password. 
    
-   Szkielet aplikacji znudowany za pomocą i z wykożystaniem części kodu z tutorialu: https://www.youtube.com/watch?v=MwZwr5Tvyxo&list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH&ab_channel=CoreySchafer
+   Szkielet aplikacji znudowany za pomocą i z wykorzystaniem części kodu z tutorialu: https://www.youtube.com/watch?v=MwZwr5Tvyxo&list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH&ab_channel=CoreySchafer
