@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  app:
+    build:
+      context: project
+    expose:
+      - 5000
+    
+  nginx:
+    image: nginx:latest
+    volumes:
+      - ./nginx/conf/:/etc/nginx/conf.d/:ro
+      - ./nginx/ca.crt:/etc/ssl/certs/ca.crt:ro
+      - ./nginx/ca.key:/etc/ssl/private/ca.key:ro
+    depends_on:
+      - app
+    ports:
+      - 100:80
+      - 90:443
+    restart: always
+  

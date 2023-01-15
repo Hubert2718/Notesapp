@@ -1,0 +1,15 @@
+flask
+gunicorn
+flask-wtf
+email_validator
+flask-sqlalchemy
+flask-bcrypt
+flask-login
+Pillow
+authlib
+pyjwt
+flask-mail
+blowfish
+flask-ckeditor
+argon2-cffi
+bleach

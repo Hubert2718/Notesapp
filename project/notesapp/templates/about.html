@@ -1,0 +1,9 @@
+{% if current_user.is_authenticated %}
+    {% extends "layout.html" %}
+{% else %}
+    {% extends "loginlayout.html" %}
+{% endif %}
+
+{% block content %}
+    <h1>About Page</h1>
+{% endblock content %}
