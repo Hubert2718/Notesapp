@@ -2,7 +2,7 @@ Aby uruchomić aplikację należy
   
   1. Z poziomu folderu Notesapp/nginx/ wygenerować certyfikaty ssl
   
-    sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout ce.key -out ce.crt
+    sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout ca.key -out ca.crt
     
   2. Z poziomu folderu Notesapp/ użyć polecenia 
   
